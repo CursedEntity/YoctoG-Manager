@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="repair.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="index.html">Home</a>
+        
+        <a href="aboutus.html">About Us</a>
+        <a href="signup.html">Login/SignUp</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            =
+        </a>
+    </div><br><br><br>
+    <h1 id="t1">Workshop</h1><br>
+    <div class="repaircont"><br>
+        <div id="imgcont1">
+            <img src="mech1.jpg" height="250px" width="250px">
+        </div>
+        <div id="des1">
+            <p>
+                When it comes to repairing a vehicle, it is important to ensure that the job is done properly to avoid
+                potential safety hazards and costly repairs down the line. The first step in repairing a vehicle is to
+                identify the problem and determine the best course of action. This may involve a diagnostic test or
+                inspection to identify the root cause of the issue.
+                Once the problem has been identified, it is important to use high-quality replacement parts and tools to
+                complete the repair. It is also important to follow manufacturer guidelines and recommended procedures
+                to ensure that the repair is done correctly.
+            </p><br><br><br>
+            <p>
+                Regular maintenance and inspections can help prevent the need for extensive repairs, so it is important
+                to stay up to date on recommended maintenance schedules and address any issues promptly to avoid
+                potential safety hazards and costly repairs.YoctoG assists you by showing best workshops near your
+                locality or city.
+            </p><br>
+            <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                        }, 'google_translate_element');
+                    }
+                </script>
+
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <a id="helloo" href="#guide1" onclick="scrollTo()">Checkout Alerts</a>
+            <script>
+                // function scrollToElement() {
+                //     const element = document.querySelector("#guide1");
+                //     element.scrollIntoView({
+                //         behavior: "smooth"
+                //     });
+                // }
+                function scrollTo(hash) {
+                    location.hash = "#guide1" + hash;
+                }
+
+            </script>
+        </div><br>
+    </div><br>
+    <div class="btncont">
+        <div id="btn11"></div><button id="btn1" onclick="nearme()">Find Service center near me</button>
+        <div id="feat1">
+            <input id="cityinput" type="text" placeholder="Find Workshops in locality/city"><button id="btn3"
+                onclick="search()">Search</button>
+
+            <!-- Function for fetching value and running search -->
+            <script language="javascript" type="text/javascript">
+
+                function search() {
+                    var getcity = document.getElementById("cityinput").value;
+                    let strRegex = new RegExp(/^[a-z0-9]+$/i);
+                    let result = strRegex.test(getcity);
+                    if (result) {
+                        var link = "https://www.google.com/maps/search/car+service+station+in+" + getcity;
+                        document.location.href = "https://www.google.com/maps/search/car+service+station+in+" + getcity;
+                        // document.write(link);
+                        // var getcity1 = document.getElementById("maps")
+
+                    }
+                    else {
+                        alert("Invalid Input, Try again");
+                        document.getElementById("cityinput").value = "";
+                    }
+                }
+                function nearme() {
+                    var link = "https://www.google.com/maps/search/Car+service+stations+near+me";
+                    document.location.href = "https://www.google.com/maps/search/Car+service+stations+near+me";
+                    // var getcity1 = document.getElementById("maps")
+                    // iframe.src = link;
+                }
+            </script>
+
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <!-- <h1 id="mktit">Must Know</h1> -->
+    <div id="guide1"><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="revealed.jpg" height="250px" width="400px"></div>
+            <div id="mkdes1">
+                <p id="head3">Watch Out for These 13 Common Car Repair Scams</p>
+                <p id="actp1">Auto repairs are like a doctors diagnosis, a second opinion is something that should
+                    always be sought out, wisely notes Ray Shefska of Your Auto Advocate. Thats because if you
+                    dont know your way around under the hood, its incredibly easy to get taken for a ride. Sure,
+                    sometimes your car needs work and you might not have known there was a problem without your
+                    trusty and trustworthy mechanic. But sometimes, a simple trip to get an oil change or an annual
+                    inspection will result in a massive repair bill all for services your car doesnt actually need.
+                    Be aware of these common car-repair scams so that you are prepared the next time you head to the
+                    shop.</p>
+                <a href="https://www.rd.com/list/car-repair-scams/" target="_blank">Read more</a>
+            </div>
+        </div><br><br><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="check.jpg" height="250px" width="400px"></div>
+            <div id="mkdes1">
+                <p id="head3">5 Things To Check At The Car Service Center During Delivery</p><br>
+                <p id="actp1">Visiting our friendly car workshop is a routine that we all have to undertake every
+                    few months. And admit it, the smile on our face when we go to take the delivery of our shining
+                    four-wheel companion at the car service center says a lot. We love our cars and we love to have
+                    them serviced properly. But, do we care to check some crucial points before exiting the
+                    workshop?The next time you pay a visit to the car service center, remember to keep these
+                    important points in mind</p>
+                <a href="https://www.cars24.com/blog/5-things-check-car-service-center/" target="_blank">Read more</a>
+            </div>
+        </div><br><br><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="vsvs.jpg" height="250px" width="400px"></div>
+            <div id="mkdes1">
+                <p id="head2">Authorised service centre or the local mechanic? Know what's better for your car</p>
+                <p id="actp1">Where would you get your car serviced? At an authorised service centre or from a local
+                    mechanic? Many car owners face this dilemma. One needs to consider several factors before
+                    deciding-quality and cost of service, genuineness of spare parts, personal rapport with the
+                    mechanic, etc. Both the authorised service centre and the independent workshop have their pros
+                    and cons. Read below to know what you should keep in mind while making this decision.</p>
+                <a href="https://economictimes.indiatimes.com/news/et-explains/authorised-service-centre-or-the-local-mechanic-know-what-is-better-for-your-car/articleshow/64647075.cms"
+                    target="_blank">Read more</a>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+</body>
+
+</html>

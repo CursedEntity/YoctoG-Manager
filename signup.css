@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #fece00;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000be;
+    height: 56px;
+    border-radius: 30px;
+}
+
+li a {
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px;
+    margin-left: 5px;
+    margin-right: 25px;
+    background: rgba(0, 0, 0, 0);
+    white-space: 1px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    transition: ease 0.4s;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+li :hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+}
+
+#myname {
+    display: block;
+    text-align: center;
+    color: white;
+    float: left;
+    padding: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+#logintitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+    width: 100%;
+    font-weight: 600;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+}
+
+
+div {
+    padding: 25px;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.998);
+    width: 530px;
+    margin: auto;
+    border-radius: 15px;
+    border-width: 0px;
+    height: 480px;
+    /* box-shadow: 10px 10px 10px 1px black; */
+    -webkit-box-shadow: 10px 16px 120px 25px rgba(0,0,0,0.1);
+-moz-box-shadow: 10px 16px 120px 25px rgba(0,0,0,0.1);
+box-shadow: 10px 16px 120px 25px rgba(0,0,0,0.1);
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+hr {
+    margin-bottom: 25px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 500px;
+    border-radius: 15px;
+    border-width: 0px;
+    padding: 10px;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.075);
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=text]:active,
+input[type=password]:active {
+    border-width: 0px;
+}
+
+::placeholder {
+    color: black;
+}
+
+input[type=placeholder] {
+    width: 500px;
+    border-radius: 15px;
+    border-width: 0px;
+    padding: 10px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=checkbox] {
+    margin-left: 40px;
+}
+
+button {
+    font-size: 13px;
+    padding: 13px;
+    border-width: 0px;
+    border-color: white;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-right: 5px;
+    transition: ease 0.3s
+}
+
+button:hover {
+    background: #cb2d3e;
+    /* fallback for old browsers */
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: ease 0.4s;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#success {
+    background-color: rgb(53, 187, 0);
+    color: white;
+    margin: 0;
+    margin-top: 25px;
+    padding: 11px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+}
+
+#nsuccess {
+    background-color: rgb(234, 2, 2);
+    color: white;
+    margin-top: 25px;
+    margin: 0;
+    padding: 11px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+}
+
+#nnsuccess {
+    background-color: rgb(219, 175, 0);
+    color: white;
+    margin: 0;
+    padding: 11px;
+    margin-top: 25px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+}
+
+#nnnsuccess {
+    background-color: rgb(149, 0, 203);
+    color: white;
+    margin: 0;
+    margin-top: 25px;
+    padding: 11px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+}
+
+#cp {
+    float: left;
+}
+img{
+margin-left: 500px;
+margin-top: 100px;
+}

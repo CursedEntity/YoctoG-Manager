@@ -1,0 +1,362 @@
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Inter', sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 1px 1px 5px black;
+}
+
+#nohover:hover {
+    background: #ffffff;
+    float: right;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    text-align: justify;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: ease 0.4s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.navbar a:hover {
+    background-color: #0000001a;
+    color: rgb(0, 0, 0);
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.cont img {
+    border-radius: 50%;
+}
+
+#t1 {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+#t2 {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#whiteline {
+    background: white;
+    width: 1200px;
+    height: 0.5px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#t3 {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#left:hover {
+    background: fixed;
+}
+
+.cont {
+    background: url(bg7.jpg);
+    /* background-size: cover; */
+    height: fit-content;
+    margin: auto;
+    background-size: cover;
+    text-align: center;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.card-container {
+    padding: 10px;
+}
+
+#line1 {
+    margin-top: 2px;
+}
+
+/* .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8 {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+  /* } */
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6,
+#card7,
+#card8,
+#card9 {
+    width: 100px;
+    padding: 5px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: ease 0.4s;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#card1:hover,
+#card2:hover,
+#card3:hover,
+#card4:hover,
+#card5:hover,
+#card6:hover,
+#card7:hover,
+#card8:hover,
+#card9:hover {
+    background: rgba(0, 0, 0, 0.070);
+}
+
+.card mb-3 {
+    justify-content: center;
+}
+
+#imgcard1,
+#imgcard2,
+#imgcard3,
+#imgcard4,
+#imgcard5,
+#imgcard6,
+#imgcard7,
+#imgcard8,
+#imgcard9 {
+    padding-top: 10px;
+    margin: auto;
+    height: 65px;
+    width: 75px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#imgcard1 {
+    background: crimson;
+}
+
+#imgcard2 {
+    background: rgb(0, 186, 37);
+}
+
+#imgcard3 {
+    background: rgb(0, 76, 227);
+}
+
+#imgcard4 {
+    background: rgb(236, 130, 0);
+}
+
+#imgcard5 {
+    background: rgb(218, 189, 0);
+}
+
+#imgcard6 {
+    background: rgb(235, 12, 116);
+}
+
+#imgcard7 {
+    background: rgb(175, 1, 191);
+}
+
+#imgcard8 {
+    background: rgb(0, 195, 159);
+}
+
+#imgcard9 {
+    background: rgb(141, 176, 0);
+}
+
+#titcard {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+
+}
+
+.cardcont {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.whyyoctog {
+    background-color: rgb(0, 0, 0);
+}
+
+.whyyoctog #t3 {
+    color: white;
+}
+
+.des {
+    text-align: center;
+}
+
+.info, .info1, .info2 {
+    display: inline-block;
+    height: 450px;
+    width: 350px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    padding: 10px;
+    font-weight: 400;
+    transition: ease 0.6s;
+}
+.info:hover{
+box-shadow: rgba(255, 255, 255, 0.400) 0px 0px 30px 10px;
+}
+.info1:hover{
+box-shadow: rgba(255, 255, 255, 0.400) 0px 0px 30px 10px;
+}
+.info2:hover{
+box-shadow: rgba(255, 255, 255, 0.400) 0px 0px 30px 10px;
+}
+
+.featuredes {
+    border: 1px solid black;
+    margin: auto;
+    max-width: 1320px;
+}
+#featuredess {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    max-width: 1200px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-weight: 400;
+}
+#playButton,#playButton1,#stopbutton,#playButton2{
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    padding:10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    transition: ease 0.6s;
+    font-size: 13px;
+}
+#playButton{
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid black;
+}
+#playButton1{
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid black;
+}
+#playButton2{
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid black;
+}
+#stopbutton{
+    border-radius: 3px;
+    background-color: rgb(195, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(195, 0, 0);
+}
+#playButton:hover,
+#playButton1:hover,
+#stopbutton:hover,
+#playButton2:hover{
+background-color: white;
+color: black;
+}
+#wheader{
+    font-size: 30px;
+    font-weight: 600;
+}
+#wdes{
+    max-width: 250px;
+    text-align: justify;
+    margin: auto;
+}

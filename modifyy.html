@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="modifyy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="index.html">Home</a>
+        
+        <a href="aboutus.html">About Us</a>
+        <a href="signup.html">Login/SignUp</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            =
+        </a>
+    </div><br><br><br>
+    <h1 id="t1">Customization</h1><br>
+    <div class="repaircont"><br><br>
+        <div id="des1">
+            <p>
+            <ul>
+                Car modification refers to the process of making changes to a vehicle's original factory specifications to improve its performance, appearance, or both. This can include adding aftermarket parts such as custom wheels, suspension upgrades, engine tuning, and body kits. Car modification has become increasingly popular among car enthusiasts as it allows them to personalize their vehicles to their liking and enhance the driving experience. However, it is important to note that car modifications can also have legal and safety implications.
+                <br><br>
+
+                The specific steps involved in a car modification center may vary depending on the type and extent of modifications being made. However, here are some general steps that may be involved in the process:
+
+                <li>Consultation: The first step is usually a consultation with a specialist to discuss the desired modifications and to determine if they are feasible and legal. The specialist may also offer suggestions and recommendations for the best way to achieve the desired results.</li>
+
+                <li>Assessment: The next step is an assessment of the vehicle to determine the extent of the modifications needed, including any necessary repairs or upgrades to support the modifications.</li>
+
+                <li> Planning: Once the assessment is complete, a plan is developed outlining the modifications to be made, including a timeline and cost estimate.</li>
+
+                <li>Parts Acquisition: Depending on the modifications, parts may need to be ordered and acquired before work can begin.</li>
+
+                <li>Installation: The actual installation of the modifications can take place, including any necessary electrical or mechanical work.</li>
+
+                <li>Testing and Tuning: After installation, the modified vehicle must be tested and tuned to ensure proper operation and performance.</li>
+
+                <li>Final Inspection: The last step is a final inspection to ensure that the modifications meet all legal and safety requirements and that the vehicle is road-worthy.</li>
+            </ul>
+            </p><br>
+            <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                        }, 'google_translate_element');
+                    }
+                </script>
+
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <a id="helloo" href="#guide1" onclick="scrollTo()">Checkout Info</a>
+            <script>
+                // function scrollToElement() {
+                //     const element = document.querySelector("#guide1");
+                //     element.scrollIntoView({
+                //         behavior: "smooth"
+                //     });
+                // }
+                function scrollTo(hash) {
+                    location.hash = "#guide1" + hash;
+                }
+            </script>
+        </div><br>
+    </div><br>
+    <div class="btncont">
+        <div id="btn11"></div><button id="btn1" onclick="nearme()">Find Customization Center near me</button>
+        <div id="feat1">
+            <input id="cityinput" type="text" placeholder="Find Customization in locality/city"><button id="btn3" onclick="search()">Search</button>
+
+            <!-- Function for fetching value and running search -->
+            <script language="javascript" type="text/javascript">
+                function search() {
+                    var getcity = document.getElementById("cityinput").value;
+                    let strRegex = new RegExp(/^[a-z0-9]+$/i);
+                    let result = strRegex.test(getcity);
+                    if (result) {
+                        var link = "https://www.google.com/maps/search/car+service+station+in+" + getcity;
+                        document.location.href = "https://www.google.com/maps/search/Car+customization+center+in" + getcity;
+                        // document.write(link);
+                        // var getcity1 = document.getElementById("maps")
+
+                    } else {
+                        alert("Invalid Input, Try again");
+                        document.getElementById("cityinput").value = "";
+                    }
+                }
+
+                function nearme() {
+                    var link = "https://www.google.com/maps/search/Car+service+stations+near+me";
+                    document.location.href = "https://www.google.com/maps/search/Car+customization+center+near+me";
+                    // var getcity1 = document.getElementById("maps")
+                    // iframe.src = link;
+                }
+            </script>
+
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <!-- <h1 id="mktit">Must Know</h1> -->
+    <div id="guide1"><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="illegal.jpg" height="250px" width="400px"><br><br></div>
+            <div id="mkdes1">
+                <p id="head3">Most common car modifications which are illegal in India.</p><br>
+                <p id="actp1">Car modification refers to altering a car's physical or mechanical aspects according to the customer’s tastes. It can include adding accessories to the body, painting a new color, or modifying the performance.
+                    While most of these modifications are harmless and done for aesthetic purposes, some changes are illegal because they hinder the vehicle's functionality and make it challenging for other people to navigate on the road.
+                    Before getting your car modified, you should make sure the people you are going to for the modifications are trustworthy and have a good reputation in the market. Make sure to ask them enough questions. </p><br>
+                <a href="https://www.autobest.co.in/blog-detail/in-india-what-type-of-car-modification-is-illegal" target="_blank">Read more</a>
+            </div>
+        </div><br><br><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="consult.jpg" height="310px" width="330px"></div>
+            <div id="mkdes1">
+                <p id="head3">Starting A Customization Center</p><br>
+                <p id="actp1">Starting car customization can be an exciting but daunting task, especially for beginners. The first step is to identify your goals and preferences for the modification, whether it's to improve performance, enhance the vehicle's appearance, or both. Once you have a clear idea of what you want to achieve, it's important to research and gather information about the modifications you're considering. This can involve reading online forums, consulting with specialists or mechanics, and exploring aftermarket parts catalogs. It's also crucial to set a budget for the customization and stick to it, as modifications can quickly become expensive. </p><br>
+                <a href="customb.pdf" target="_blank">Access In-depth Guide</a>
+            </div>
+        </div><br><br><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="guide.jpg" height="300px" width="300px"></div>
+            <div id="mkdes1">
+                <p id="head2">Modification Guide for Consumers</p>
+                <p id="actp1">Getting guidance before modifying your vehicle is crucial to ensure that the modifications you make are safe, legal, and effective. Without proper guidance, modifications can compromise the structural integrity of the vehicle, reduce its performance, or even make it illegal to operate on public roads. Consulting with experienced professionals such as mechanics, car customization specialists, or automotive engineers can provide valuable insight and advice on the modifications that will best suit your needs and goals. We provide a breif guide for people that wish to modify their vehicle</p><br>
+                <a href="customguide.pdf" target="_blank">Access In-depth Guide</a>
+            </div>
+        </div><br><br>
+        </div>
+    </div>
+
+</body>
+
+</html>

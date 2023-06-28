@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="maintain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="index.html">Home</a>
+        
+        <a href="aboutus.html">About Us</a>
+        <a href="#">Login/SignUp</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            =
+        </a>
+    </div><br><br><br>
+    <h1 id="t1">Vehicle Maintenance</h1><br>
+    <div class="repaircont"><br><br>
+        <div id="des1">
+            <p>
+            Maintenance is a crucial aspect of owning a vehicle to ensure its optimal performance, safety, and longevity. Regular maintenance can prevent minor issues from becoming major problems and can extend the lifespan of your vehicle. Maintenance tasks can include regular oil changes, tire rotations, brake checks, and fluid replacements. It is important to refer to the vehicle's owner manual for the recommended maintenance schedule, which can vary depending on the make and model of the vehicle. <br><br>It is also important to pay attention to any warning signs or unusual noises, such as strange vibrations or squealing brakes, as they can indicate underlying issues that need to be addressed promptly. Regularly servicing your vehicle can also help you identify and fix any potential safety hazards, such as worn-out brake pads or tires. Neglecting maintenance can lead to breakdowns, costly repairs, and can even compromise your safety on the road. Therefore, it is essential to prioritize regular maintenance as part of responsible vehicle ownership.
+            <br><br><ul>
+  <li>Perform regular checkups on your vehicle, such as inspecting the tires, brakes, fluid levels, belts, and hoses.</li>
+  <li>Follow the manufacturer's recommended schedule for oil changes, which typically range from every 3,000 to 10,000 miles depending on the vehicle and type of oil used.</li>
+  <li>Replace the air filter periodically, as a clogged filter can reduce engine performance and fuel efficiency.</li>
+  <li>Check and replace fluids such as coolant, brake fluid, and transmission fluid according to the manufacturer's recommendations.</li>
+  <li>Rotate tires regularly to ensure even wear and prolong their lifespan.</li>
+  <li>Check the battery terminals and clean them regularly to prevent corrosion.</li>
+  <li>Inspect the brakes regularly for signs of wear or damage and replace brake pads or shoes as necessary.</li>
+  <li>Regularly wash and wax the exterior of your vehicle to protect the paint and prevent rust.</li>
+  <li>Practice safe driving habits such as avoiding sudden stops and starts, driving at moderate speeds, and avoiding potholes and rough terrain.</li>
+</ul>
+            </p><br>
+            <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                        }, 'google_translate_element');
+                    }
+                </script>
+
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <a id="helloo" href="#guide1" onclick="scrollTo()">Checkout Info</a>
+            <script>
+                // function scrollToElement() {
+                //     const element = document.querySelector("#guide1");
+                //     element.scrollIntoView({
+                //         behavior: "smooth"
+                //     });
+                // }
+                function scrollTo(hash) {
+                    location.hash = "#guide1" + hash;
+                }
+            </script>
+        </div><br>
+    </div><br>
+            <!-- Function for fetching value and running search -->
+            <script language="javascript" type="text/javascript">
+                function search() {
+                    var getcity = document.getElementById("cityinput").value;
+                    let strRegex = new RegExp(/^[a-z0-9]+$/i);
+                    let result = strRegex.test(getcity);
+                    if (result) {
+                        var link = "https://www.google.com/maps/search/car+service+station+in+" + getcity;
+                        document.location.href = "https://www.google.com/maps/search/Car+customization+center+in" + getcity;
+                        // document.write(link);
+                        // var getcity1 = document.getElementById("maps")
+
+                    } else {
+                        alert("Invalid Input, Try again");
+                        document.getElementById("cityinput").value = "";
+                    }
+                }
+
+                function nearme() {
+                    var link = "https://www.google.com/maps/search/Car+service+stations+near+me";
+                    document.location.href = "https://www.google.com/maps/search/Car+customization+center+near+me";
+                    // var getcity1 = document.getElementById("maps")
+                    // iframe.src = link;
+                }
+            </script>
+
+        </div>
+    </div>
+
+    <br>
+    <!-- <h1 id="mktit">Must Know</h1> -->
+    <div id="guide1"><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="maint.jpg" height="250px" width="450px"><br><br></div>
+            <div id="mkdes1">
+                <p id="head3">The Ultimate Car Maintanence Checklist For Passionates</p><br>
+                <p id="actp1">To maximise the life and performance of your vehicle, here is a list of items you should check depending on the time and season. Some of these parts of your vehicle should be checked regularly, and others only in the long run. Be sure to follow your vehicles maintenance schedule and service interval record.Caring for your car and keeping it in proper running order takes a little bit of effort, but you definitely dont have to be a mechanical whiz to keep your vehicle running well. The biggest hurdle is being aware of what needs to be done—and how often—for optimal vehicle upkeep. By knowing the basics about what your car needs, and when you should perform routine car maintenance, you will ensure that your car is in top-running condition.</p><br>
+                <a href="https://www.bridgestone.co.in/en/tyre-clinic/drivers-essential/ultimate-car-maintenance-checklist" target="_blank">Read more</a>
+            </div>
+        </div><br><br><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="tips.jpg" height="340px" width="350px"></div>
+            <div id="mkdes1">
+                <p id="head3">74 Maintenance Tips That Will Extend the Life of Your Car<p><br>
+                <p id="actp1">Vehicle maintenance tips are necessary for several reasons. Firstly, proper maintenance can extend the life of your vehicle, saving you money in the long run. Regular checks and maintenance can identify potential problems early on, preventing more costly repairs down the road. Secondly, well-maintained vehicles are more reliable and safer to drive. Regularly checking and maintaining components such as brakes, tires, and lights can help prevent accidents caused by equipment failure. Thirdly, maintaining your vehicle can improve its performance and fuel efficiency. This can save you money on gas and reduce harmful emissions that contribute to air pollution. Finally, vehicle maintenance tips can help you avoid legal issues. Some jurisdictions have mandatory safety checks or emissions tests, and neglecting these requirements can result in fines or even the loss of your driver's license. By following proper maintenance guidelines, you can keep your vehicle running smoothly and safely, while also avoiding costly penalties.</p><br>
+                <a href="https://www.rd.com/list/car-maintenance-tips-extend-life-car/" target="_blank">Read More</a>
+            </div>
+        </div><br><br><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="guide.jpg" height="300px" width="300px"></div>
+            <div id="mkdes1">
+                <p id="head2">Maintanence Guide for Consumers</p>
+                <p id="actp1">Vehicle maintenance is crucial to keep your car in good working condition, prevent breakdowns, and ensure your safety on the road. Regular maintenance tasks include checking and changing the oil, replacing filters, inspecting and replacing brake pads, checking tire pressure, and keeping your vehicle clean. Neglecting vehicle maintenance can lead to costly repairs and decrease the value of your car. To help you maintain your vehicle properly, there are many guides available online.Our PDF guide provides detailed information on how to maintain your vehicle, including recommended maintenance schedules, tips on what to look for during inspections, and how to troubleshoot common problems. It's a great resource for anyone who wants to keep their car running smoothly and safely."</p><br>
+                <a href="Vehiclemaintenance.pdf" target="_blank">Access In-depth Guide</a>
+            </div>
+        </div><br><br>
+        </div>
+    </div>
+
+</body>
+
+</html>

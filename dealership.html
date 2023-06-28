@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dealership.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="index.html">Home</a>
+        
+        <a href="aboutus.html">About Us</a>
+        <a href="signup.html">Login/SignUp</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            =
+        </a>
+    </div><br><br><br>
+    <h1 id="t1">Vehicle Dealership</h1><br>
+    <div class="repaircont"><br><br>
+        <div id="des1">
+            <p>
+                A car dealership is a business that sells new and/or used cars to consumers. Dealerships are typically authorized by one or more automakers to sell their vehicles, and they often offer financing, leasing, and other services related to the purchase or maintenance of a vehicle. The car dealership process involves several steps that a customer typically goes through when buying a car from a dealership. Here are the main steps involved in the process:
+            </p><br><br>
+            <p>
+            <ul>
+                <li>Research and Test Drive: Before visiting a dealership, a customer will typically research the make and model of the car they want to purchase. They may also visit the dealership's website to view inventory and pricing. Once at the dealership, the customer will often test drive the car to ensure it meets their needs and preferences.</li>
+
+                <li>Financing: If the customer decides to purchase the car, they will often work with the dealership's finance department to arrange financing or leasing. The finance department will run a credit check and offer financing options based on the customer's credit score and financial situation.</li>
+
+                <li>Negotiation: Once the customer has decided on a car and financing, they will typically negotiate the price with the dealership's salesperson. The salesperson may offer a price lower than the advertised price to close the sale.</li>
+
+                <li>Signing the Contract: If the customer agrees to the price and financing terms, they will sign a contract and pay a deposit or down payment. The contract will include the price of the car, financing terms, and any additional warranties or service contracts.</li>
+
+                <li>Delivery: After signing the contract, the customer will typically take delivery of the car. The dealership will often provide a detailed explanation of the car's features and maintenance requirements, and may offer additional services like car detailing or maintenance packages.</li></ul>
+                </p><br> <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                        }, 'google_translate_element');
+                    }
+                </script>
+
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <a id="helloo" href="#guide1" onclick="scrollTo()">Checkout Alerts</a>
+                <script>
+                    // function scrollToElement() {
+                    //     const element = document.querySelector("#guide1");
+                    //     element.scrollIntoView({
+                    //         behavior: "smooth"
+                    //     });
+                    // }
+                    function scrollTo(hash) {
+                        location.hash = "#guide1" + hash;
+                    }
+                </script>
+        </div><br>
+    </div><br>
+    <div class="btncont">
+        <div id="btn11"></div><button id="btn1" onclick="nearme()">Find Car Dealerships near me</button>
+        <div id="feat1">
+            <input id="cityinput" type="text" placeholder="Find Dealership in locality/city"><button id="btn3" onclick="search()">Search</button>
+
+            <!-- Function for fetching value and running search -->
+            <script language="javascript" type="text/javascript">
+                function search() {
+                    var getcity = document.getElementById("cityinput").value;
+                    let strRegex = new RegExp(/^[a-z0-9]+$/i);
+                    let result = strRegex.test(getcity);
+                    if (result) {
+                        var link = "https://www.google.com/maps/search/car+service+station+in+" + getcity;
+                        document.location.href = "https://www.google.com/maps/search/Car+dealership+in" + getcity;
+                        // document.write(link);
+                        // var getcity1 = document.getElementById("maps")
+
+                    } else {
+                        alert("Invalid Input, Try again");
+                        document.getElementById("cityinput").value = "";
+                    }
+                }
+
+                function nearme() {
+                    var link = "https://www.google.com/maps/search/Car+service+stations+near+me";
+                    document.location.href = "https://www.google.com/maps/search/Car+dealership+near+me";
+                    // var getcity1 = document.getElementById("maps")
+                    // iframe.src = link;
+                }
+            </script>
+
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <!-- <h1 id="mktit">Must Know</h1> -->
+    <div id="guide1"><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="scam1.jpg" height="250px" width="400px"></div>
+            <div id="mkdes1">
+                <p id="head3">Ultimate List of Dealership Scams</p><br>
+                <p id="actp1">Thinking of buying a car? Then you're probably like most consumers - afraid and anxious about being ripped off. Consumers in the U.S. lose over $30 billion each year to car buying scams, many of which are easily avoidable. Over the last several years, I've been researching how car dealers work and have documented over 110 scams and tactics used throughout the industry. Not all car dealers are bad, but it can be difficult to figure out which ones are really honest. My goal is to expose the tricks used by the worst offenders so you don't end up becoming another victim.</p><br>
+                <a href="https://www.realcartips.com/scams/" target="_blank">Read more</a>
+            </div>
+        </div><br><br><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="bconsult.jpg" height="250px" width="270px"></div>
+            <div id="mkdes1">
+                <p id="head3">Guide For Starting A Car Dealership</p><br>
+                <p id="actp1">Starting a dealership requires careful planning and preparation. To begin, choose a niche and create a business plan that outlines your goals and financial projections. Secure financing, obtain necessary licenses and permits, find a prime location, hire knowledgeable staff, and market your dealership to build your brand and attract customers. With dedication and hard work, starting a dealership can be a fulfilling and profitable venture.To know more about starting a car dealership, we have provided an ultimate guide in form of a pdf that is accessible using following option</p><br>
+                <a href="startdealership.pdf" target="_blank">Access In-depth Guide</a>
+            </div>
+        </div><br><br><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="onlinedealing.jpg" height="250px" width="270px"></div>
+            <div id="mkdes1">
+                <p id="head2">Online Car Buy/Sell</p>
+                <p id="actp1">Cars24 is an Indian company that operates in the used car marketplace. It offers a platform where individuals can buy, sell, or exchange their used cars in a hassle-free manner. Cars24 provides car owners with a transparent, convenient, and trustworthy experience by conducting a thorough inspection of every car, ensuring fair pricing, and facilitating all paperwork. The company has a strong online presence and has expanded rapidly, with more than 200 branches across India. Cars24 is known for its innovative approach to the used car market and is a popular choice among car buyers and sellers in India.</p><br>
+                <a href="https://www.cars24.com/buy-used-car?sort=lhl&serveWarrantyCount=true&listingSource=Homepage_Filters&storeCityId=2423&pinId=411001">Buy Car</a>
+                <a href="https://www.cars24.com/sell-used-cars">Sell Car</a>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="mk1">
+            <div id="mkimg1"><img src="bikesell.jpg" height="350px" width="380px"></div>
+            <div id="mkdes1">
+                <p id="head2">Online Two-Wheeler Buy/Sell</p>
+                <p id="actp1">Looking to buy a two-wheeler? Look no further than our dedicated section, which provides a seamless and user-friendly platform for purchasing two-wheelers online. Our section offers a wide variety of options, from scooters to motorcycles, with different brands, models, and price ranges to suit your preferences and budget. We partner with reputable dealerships to ensure that all two-wheelers are in top condition, and we also provide financing options to help you secure your dream ride. With our simple and secure platform, you can browse, compare, and purchase your two-wheeler with ease, all from the comfort of your own home.</p><br>
+                <a id="btn33" href="https://www.bikedekho.com/new-bikes?q=Buy%20Bike">Buy Bikes</a>
+            <a id="btn33" href="https://www.bikedekho.com/sell-used-bike">Sell Bikes</a>
+            </div>
+        </div><br><br>
+    </div>
+
+</body>
+
+</html>
